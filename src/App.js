@@ -38,6 +38,17 @@ const UserDetails = ()=>{
   )
 }
 
+const NewButton = ()=>{
+  const clickMe = ()=>{
+    alert("I was clicked")
+  }
+  return(
+    <button onClick={clickMe}>
+      Alert !
+    </button>
+  )
+}
+
 function App() {
   return (
     
@@ -48,6 +59,7 @@ function App() {
       <img src={user.imgUrl} style={{height: user.imgSize , width: user.imgSize}} alt='my image'/>
       <UserDetails/>
       <ShoppingList/>
+      <NewButton/>
     </div>
   );
 }
