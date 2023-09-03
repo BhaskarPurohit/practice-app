@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import SampleComponent from './sampleComponent';
 import ShoppingList from './shoppingList';
+import StateButton from './stateButton';
 
 
 const NestedComponent = ()=>{
@@ -60,6 +61,7 @@ function App() {
       <UserDetails/>
       <ShoppingList/>
       <NewButton/>
+      <StateButton/>
     </div>
   );
 }
