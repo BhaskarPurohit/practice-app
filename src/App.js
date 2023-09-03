@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import SampleComponent from './sampleComponent';
+import ShoppingList from './shoppingList';
 
 
 const NestedComponent = ()=>{
@@ -23,6 +24,10 @@ const user = {
   imgSize:50
 }
 
+
+
+
+
 const UserDetails = ()=>{
   return(
     <div>
@@ -42,6 +47,7 @@ function App() {
       <MyButton/>
       <img src={user.imgUrl} style={{height: user.imgSize , width: user.imgSize}} alt='my image'/>
       <UserDetails/>
+      <ShoppingList/>
     </div>
   );
 }
